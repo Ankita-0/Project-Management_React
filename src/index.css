@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.ProjectsSidebar {
+    width: 20%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: rgb(27, 27, 27);
+    color: lightgray;
+    border-top-right-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    height: 100vh;
+}
+.ProjectsSidebar h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+}
+
+.ProjectsSidebar button{
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.75rem;
+    border-radius: 0.375rem;
+    background-color: rgb(56, 56, 56);
+    color: lightgray;
+}
+.ProjectsSidebar button:hover{
+    background-color: lightgray;
+    color: rgb(56, 56, 56);
+}
+
+.NewProject {
+    width: 35rem;
+    margin-top: 4rem;
+}
