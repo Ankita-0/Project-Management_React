@@ -25,13 +25,14 @@
     border-bottom-right-radius: 0.75rem;
     height: 100vh;
 }
+
 .ProjectsSidebar h2 {
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 34px;
 }
 
-.ProjectsSidebar button{
+.ProjectsSidebar button {
     padding-right: 16px;
     padding-left: 16px;
     padding-top: 0.5rem;
@@ -41,12 +42,158 @@
     background-color: rgb(56, 56, 56);
     color: lightgray;
 }
-.ProjectsSidebar button:hover{
+
+.ProjectsSidebar button:hover {
     background-color: lightgray;
     color: rgb(56, 56, 56);
 }
 
+.ProjectsSidebar ul button{
+    background-color: rgb(27, 27, 27);
+    color:rgb(212, 212, 212);
+    margin-top: 4px;
+}
+
+.ProjectsSidebar ul{
+    margin-top: 16px;
+}
+.ProjectsSidebar ul button:hover{
+    background-color: rgb(27, 27, 27);
+    color:rgb(0, 255, 242);
+    text-shadow: 2px;
+    /* margin-top: 4px; */
+}
+
+#modal {
+    background-color: lightgrey;
+    border-radius: 5px;
+    border-bottom-color: rgb(77, 76, 76);
+    border-bottom-width: 4px;
+    box-shadow: 10px;
+}
+
+#modal h2{
+    background-color: rgb(77, 76, 76);
+    padding: 8px;
+    text-align: center;
+}
+#modal p{
+    padding: 8px;
+    text-align: center;
+}
+dialog form button{
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.75rem;
+    border-radius: 0.375rem;
+    background-color: rgb(77, 76, 76);
+    color: rgb(255, 255, 255);
+    margin-right: 8px;
+    margin-bottom: 8px;
+    margin-top: 4px;
+    float: right;
+}
+
+dialog form button:hover{
+    background-color: rgb(22, 22, 22);
+    color: rgb(196, 196, 196);
+}
 .NewProject {
     width: 35rem;
     margin-top: 4rem;
+}
+
+.NewProject menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.NewProject menu li:last-child {
+    color: rgb(255, 255, 255);
+    border-radius: 0.25rem;
+    background-color: rgb(80, 80, 80);
+    padding: 4px 8px 4px 8px;
+}
+
+.NewProject menu li:last-child:hover {
+    color: rgb(102, 255, 0);
+    background-color: rgb(0, 0, 0);
+}
+
+.NewProject menu li:first-child:hover {
+    color: rgb(255, 0, 0);
+}
+
+.InputPara {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.InputPara label {
+    font-size: small;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(56, 56, 56);
+}
+
+.InputPara textarea,
+input {
+    padding: 4px;
+    border-bottom-width: 2px;
+    border-radius: 2px;
+    border-color: rgb(128, 128, 128);
+    background-color: rgb(231, 223, 176);
+    ;
+    color: rgb(70, 70, 70);
+}
+
+.NoProjectSelected {
+    text-align: center;
+    width: 66.66%;
+}
+
+.NoProjectSelected h2 {
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(56, 56, 56);
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.NoProjectSelected img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    margin: auto;
+}
+
+.NoProjectSelected p {
+    color: rgb(83, 83, 83);
+    margin-bottom: 4rem;
+}
+
+.NoProjectSelected p button {
+    /* margin-top: 2rem; */
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.75rem;
+    border-radius: 0.375rem;
+    background-color: rgb(56, 56, 56);
+    color: lightgray;
+}
+
+.NoProjectSelected p button:hover {
+    background-color: rgb(17, 17, 17);
+    color: rgb(224, 224, 224);
 }
